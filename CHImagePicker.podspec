@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author       = { "Chausson" => "232564026@qq.com" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/chausson/CHPickImageDemo.git", :tag => "1.0.0"}
-  s.source_files  = "CHImagePicker/*.{h,m}","CHImagePicker/CHaussonSheeet/*.{h,m}"
+  s.source_files  = "CHImagePicker/*.{h,m}","CHImagePicker/ChaussonSheet/*.{h,m}"
 
  
 end
