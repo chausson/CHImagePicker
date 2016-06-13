@@ -9,7 +9,7 @@
 pod 'CHImagePicker'
 
 ```
-
+# 使用方法
 ``` Demo
     [[CHImagePicker shareInstance]showWithController:self finish:^(UIImage *image) {
         NSLog(@"image=%@",image);
