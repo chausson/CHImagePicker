@@ -70,7 +70,7 @@
     // Configure the view for the selected state
 }
 + (NSString *)identifier{
-    return [self description];
+    return NSStringFromClass(self.class);
 }
 @end
 
