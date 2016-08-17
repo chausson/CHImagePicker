@@ -17,5 +17,6 @@
 
 + (void)show:(BOOL)animated
       picker:(UIViewController *)controller
-  completion:(PickCallback)callback;
+  completion:(void(^)(UIImage *image))callback;
+
 @end
