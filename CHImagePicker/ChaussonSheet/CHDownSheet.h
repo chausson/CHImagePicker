@@ -17,9 +17,9 @@
    
 }
 
--(id)initWithlist:(NSArray *)list height:(CGFloat)height;
+-(id)initWithList:(NSArray *)list height:(CGFloat)height;
 - (void)showInView:(UIViewController *)Sview;
-@property (nonatomic,assign) id <CHDownSheetDelegate> delegate;
+@property (nonatomic ,weak) id <CHDownSheetDelegate> delegate;
 @property (nonatomic ,strong) UITableView *view;
 @end
 

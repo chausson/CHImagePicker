@@ -5,6 +5,10 @@
 //  Created by Chausson on 14-7-19.
 //  Copyright (c) 2014年 Chausson. All rights reserved.
 //
+//获取设备的物理高度
+#define IScreenHeight [UIScreen mainScreen].bounds.size.height
+//获取设备的物理宽度
+#define IScreenWidth [UIScreen mainScreen].bounds.size.width
 #define KNavitionBarHeight 64
 #import "CHDownSheet.h"
 @interface CHDownSheet()
@@ -23,7 +27,7 @@
     return self;
 }
 
--(id)initWithlist:(NSArray *)list height:(CGFloat)height{
+-(id)initWithList:(NSArray *)list height:(CGFloat)height{
     self = [super init];
     if(self){
         self.frame = CGRectMake(0, 0, IScreenWidth, IScreenHeight);
@@ -39,16 +43,16 @@
     }
     return self;
 }
-- (void)showInView:(UIViewController *)Sview
+- (void)showInView:(UIViewController *)chview
 {
     
-    if(Sview==nil){
-        //        [[UIApplication sharedApplication].delegate.window addSubview:self];
+    if(chview==nil){
+        [[UIApplication sharedApplication].delegate.window addSubview:self];
     }else{
         //[view addSubview:self];
-        self.isTranslucent =  !Sview.navigationController.navigationBar.isTranslucent && Sview.navigationController.navigationBar;
+        self.isTranslucent =  !chview.navigationController.navigationBar.isTranslucent && chview.navigationController.navigationBar;
     
-        [Sview.view addSubview:self];
+        [chview.view addSubview:self];
         
     }
     [self animeData];
@@ -139,6 +143,7 @@
     [self tappedCancel];
     if(_delegate !=nil && [_delegate respondsToSelector:@selector(didSelectIndex:)]){
         [_delegate didSelectIndex:indexPath.row];
+        [self removeFromSuperview];
         return;
     }
 }

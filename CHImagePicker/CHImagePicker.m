@@ -8,44 +8,39 @@
 
 #import "CHImagePicker.h"
 #import "CHDownSheet.h"
-
+#import <objc/runtime.h>
+typedef void (^PickCallback)(UIImage* image);
+static CHImagePicker *picker = nil;
 @interface CHImagePicker()<CHDownSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @end
 @implementation CHImagePicker{
-    UIViewController *_screenController;
-    NSArray *_pickList;
+    __weak UIViewController *_screenController;
     PickCallback _callback;
     BOOL _animated;
 }
-+ (CHImagePicker *)shareInstance{
-    static CHImagePicker * instance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        instance = [[self alloc]init];
-        instance->_pickList = [instance avaiablePickerSheetModel];
-    });
-    return instance;
-}
-- (void)showWithController:(UIViewController *)controller
-                    finish:(PickCallback)callback
-                  animated:(BOOL)animated{
-    NSAssert(controller, @"Controller can not be nil !");
-    _callback = callback;
-    _screenController = controller;
-    _animated = animated;
-    CHDownSheet *sheet = [[CHDownSheet alloc]initWithlist:_pickList height:330];
-    sheet.delegate = self;
+
+
++ (void)show:(BOOL)animated
+      picker:(UIViewController *)controller
+  completion:(void(^)(UIImage *image))callback{
+    
+    picker = [[[self class]alloc ]init];
+    picker->_callback  = callback;
+    picker->_screenController = controller;
+    CHDownSheet *sheet = [[CHDownSheet alloc]initWithList:[picker avaiablePickerSheetModel] height:330];
+    sheet.delegate = picker;
     [sheet showInView:controller];
 }
--(NSArray *)avaiablePickerSheetModel{
-    CHDownSheetModel *Model_1 = [[CHDownSheetModel alloc]init];
-    Model_1.title = @"拍照";
-    CHDownSheetModel *Model_2 = [[CHDownSheetModel alloc]init];
-    Model_2.title = @"从手机相册选择";
-    CHDownSheetModel *Model_3 = [[CHDownSheetModel alloc]init];
-    Model_3.title = @"取消";
 
-    return   @[Model_1,Model_2,Model_3];
+-(NSArray *)avaiablePickerSheetModel{
+    CHDownSheetModel *pick = [[CHDownSheetModel alloc]init];
+    pick.title = @"拍照";
+    CHDownSheetModel *select = [[CHDownSheetModel alloc]init];
+    select.title = @"从手机相册选择";
+    CHDownSheetModel *cancel = [[CHDownSheetModel alloc]init];
+    cancel.title = @"取消";
+    
+    return   @[pick,select,cancel];
 }
 -(void)didSelectIndex:(NSInteger)index{
     if (index == 0) {
@@ -113,10 +108,8 @@
         if (_callback) {
             _callback(image);
         }
-    }];
-    
-
   
+    }];
     
 }
 @end

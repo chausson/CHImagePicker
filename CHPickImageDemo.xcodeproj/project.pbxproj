@@ -17,6 +17,7 @@
 		0668FAA81C9AACE500FA144F /* CHDownSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668FAA31C9AACE500FA144F /* CHDownSheet.m */; };
 		0668FAA91C9AACE500FA144F /* CHDownSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668FAA51C9AACE500FA144F /* CHDownSheetCell.m */; };
 		0668FAAA1C9AACE500FA144F /* CHDownSheetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668FAA71C9AACE500FA144F /* CHDownSheetModel.m */; };
+		06AF71101D6450FD00091BC1 /* UIViewController+ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 06AF710F1D6450FD00091BC1 /* UIViewController+ImagePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		0668FAA51C9AACE500FA144F /* CHDownSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheetCell.m; sourceTree = "<group>"; };
 		0668FAA61C9AACE500FA144F /* CHDownSheetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheetModel.h; sourceTree = "<group>"; };
 		0668FAA71C9AACE500FA144F /* CHDownSheetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheetModel.m; sourceTree = "<group>"; };
+		06AF710E1D6450FD00091BC1 /* UIViewController+ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ImagePicker.h"; path = "CHImagePicker/UIViewController+ImagePicker.h"; sourceTree = SOURCE_ROOT; };
+		06AF710F1D6450FD00091BC1 /* UIViewController+ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ImagePicker.m"; path = "CHImagePicker/UIViewController+ImagePicker.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 		0668FA921C9AAB0700FA144F /* CHImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				06AF710E1D6450FD00091BC1 /* UIViewController+ImagePicker.h */,
+				06AF710F1D6450FD00091BC1 /* UIViewController+ImagePicker.m */,
 				061BFA651C9AD698009F9FDE /* CHImagePicker.h */,
 				061BFA661C9AD698009F9FDE /* CHImagePicker.m */,
 				0668FAA11C9AACE500FA144F /* ChaussonSheet */,
@@ -189,6 +194,7 @@
 			files = (
 				0668FAA81C9AACE500FA144F /* CHDownSheet.m in Sources */,
 				0668FAA91C9AACE500FA144F /* CHDownSheetCell.m in Sources */,
+				06AF71101D6450FD00091BC1 /* UIViewController+ImagePicker.m in Sources */,
 				061BFA671C9AD698009F9FDE /* CHImagePicker.m in Sources */,
 				0668FAAA1C9AACE500FA144F /* CHDownSheetModel.m in Sources */,
 				0668FA781C9AA79500FA144F /* ViewController.m in Sources */,

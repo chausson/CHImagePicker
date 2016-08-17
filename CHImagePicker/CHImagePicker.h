@@ -8,18 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^PickCallback)(UIImage* image);
 
 @interface CHImagePicker : NSObject
 
 + (instancetype) new __unavailable;
 - (instancetype) init __unavailable;
 
-+ (CHImagePicker *)shareInstance;
 
-- (void)showWithController:(UIViewController *)controller
-                    finish:(PickCallback)callback
-                  animated:(BOOL)animated;
-
-
++ (void)show:(BOOL)animated
+      picker:(UIViewController *)controller
+  completion:(PickCallback)callback;
 @end

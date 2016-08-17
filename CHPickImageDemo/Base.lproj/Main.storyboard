@@ -17,13 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6n-Pa-yCb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6n-Pa-yCb">
                                 <rect key="frame" x="248" y="169" width="104" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Cdm-Hv-uvc"/>
-                                    <constraint firstAttribute="width" constant="104" id="yjn-6p-lhV"/>
+                                    <constraint firstAttribute="height" constant="30" id="8gf-r9-nb5"/>
+                                    <constraint firstAttribute="width" constant="104" id="YDI-vS-uyA"/>
                                 </constraints>
-                                <state key="normal" title="Photo"/>
+                                <state key="normal" title="Pick Photo"/>
                                 <connections>
                                     <action selector="photo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OYw-qg-o7R"/>
                                 </connections>
@@ -31,8 +31,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="U6n-Pa-yCb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aW2-hM-duv"/>
-                            <constraint firstItem="U6n-Pa-yCb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="105" id="zBK-Vb-RJB"/>
+                            <constraint firstItem="U6n-Pa-yCb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="149" id="5aW-cO-dTG"/>
+                            <constraint firstItem="U6n-Pa-yCb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DBh-rj-Mdh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="r8O-Xh-fjw"/>
