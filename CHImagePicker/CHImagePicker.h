@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UIViewController+ImagePicker.h"
+#import "CHDownSheet.h"
 
 @interface CHImagePicker : NSObject
 
@@ -19,4 +20,6 @@
       picker:(UIViewController *)controller
   completion:(void(^)(UIImage *image))callback;
 
++ (void)show:(BOOL)animated
+      picker:(UIViewController <CHDownSheetDelegate>*)controller;
 @end

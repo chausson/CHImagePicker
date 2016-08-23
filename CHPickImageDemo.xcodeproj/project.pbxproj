@@ -7,22 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		061BFA671C9AD698009F9FDE /* CHImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 061BFA661C9AD698009F9FDE /* CHImagePicker.m */; };
 		0668FA721C9AA79500FA144F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668FA711C9AA79500FA144F /* main.m */; };
 		0668FA751C9AA79500FA144F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668FA741C9AA79500FA144F /* AppDelegate.m */; };
 		0668FA781C9AA79500FA144F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668FA771C9AA79500FA144F /* ViewController.m */; };
 		0668FA7B1C9AA79500FA144F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0668FA791C9AA79500FA144F /* Main.storyboard */; };
 		0668FA7D1C9AA79500FA144F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0668FA7C1C9AA79500FA144F /* Assets.xcassets */; };
 		0668FA801C9AA79500FA144F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0668FA7E1C9AA79500FA144F /* LaunchScreen.storyboard */; };
-		0668FAA81C9AACE500FA144F /* CHDownSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668FAA31C9AACE500FA144F /* CHDownSheet.m */; };
-		0668FAA91C9AACE500FA144F /* CHDownSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668FAA51C9AACE500FA144F /* CHDownSheetCell.m */; };
-		0668FAAA1C9AACE500FA144F /* CHDownSheetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668FAA71C9AACE500FA144F /* CHDownSheetModel.m */; };
-		06AF71101D6450FD00091BC1 /* UIViewController+ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 06AF710F1D6450FD00091BC1 /* UIViewController+ImagePicker.m */; };
+		067D467E1D6C1D6A00EA70EB /* CHDownSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 067D46751D6C1D6A00EA70EB /* CHDownSheet.m */; };
+		067D467F1D6C1D6A00EA70EB /* CHDownSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 067D46771D6C1D6A00EA70EB /* CHDownSheetCell.m */; };
+		067D46801D6C1D6A00EA70EB /* CHDownSheetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 067D46791D6C1D6A00EA70EB /* CHDownSheetModel.m */; };
+		067D46811D6C1D6A00EA70EB /* CHImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 067D467B1D6C1D6A00EA70EB /* CHImagePicker.m */; };
+		067D46821D6C1D6A00EA70EB /* UIViewController+ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 067D467D1D6C1D6A00EA70EB /* UIViewController+ImagePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		061BFA651C9AD698009F9FDE /* CHImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHImagePicker.h; path = CHImagePicker/CHImagePicker.h; sourceTree = SOURCE_ROOT; };
-		061BFA661C9AD698009F9FDE /* CHImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHImagePicker.m; path = CHImagePicker/CHImagePicker.m; sourceTree = SOURCE_ROOT; };
 		0668FA6D1C9AA79400FA144F /* CHPickImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHPickImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0668FA711C9AA79500FA144F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0668FA731C9AA79500FA144F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,14 +31,16 @@
 		0668FA7C1C9AA79500FA144F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0668FA7F1C9AA79500FA144F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0668FA811C9AA79500FA144F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0668FAA21C9AACE500FA144F /* CHDownSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheet.h; sourceTree = "<group>"; };
-		0668FAA31C9AACE500FA144F /* CHDownSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheet.m; sourceTree = "<group>"; };
-		0668FAA41C9AACE500FA144F /* CHDownSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheetCell.h; sourceTree = "<group>"; };
-		0668FAA51C9AACE500FA144F /* CHDownSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheetCell.m; sourceTree = "<group>"; };
-		0668FAA61C9AACE500FA144F /* CHDownSheetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheetModel.h; sourceTree = "<group>"; };
-		0668FAA71C9AACE500FA144F /* CHDownSheetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheetModel.m; sourceTree = "<group>"; };
-		06AF710E1D6450FD00091BC1 /* UIViewController+ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ImagePicker.h"; path = "CHImagePicker/UIViewController+ImagePicker.h"; sourceTree = SOURCE_ROOT; };
-		06AF710F1D6450FD00091BC1 /* UIViewController+ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ImagePicker.m"; path = "CHImagePicker/UIViewController+ImagePicker.m"; sourceTree = SOURCE_ROOT; };
+		067D46741D6C1D6A00EA70EB /* CHDownSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheet.h; sourceTree = "<group>"; };
+		067D46751D6C1D6A00EA70EB /* CHDownSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheet.m; sourceTree = "<group>"; };
+		067D46761D6C1D6A00EA70EB /* CHDownSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheetCell.h; sourceTree = "<group>"; };
+		067D46771D6C1D6A00EA70EB /* CHDownSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheetCell.m; sourceTree = "<group>"; };
+		067D46781D6C1D6A00EA70EB /* CHDownSheetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheetModel.h; sourceTree = "<group>"; };
+		067D46791D6C1D6A00EA70EB /* CHDownSheetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheetModel.m; sourceTree = "<group>"; };
+		067D467A1D6C1D6A00EA70EB /* CHImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHImagePicker.h; sourceTree = "<group>"; };
+		067D467B1D6C1D6A00EA70EB /* CHImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHImagePicker.m; sourceTree = "<group>"; };
+		067D467C1D6C1D6A00EA70EB /* UIViewController+ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ImagePicker.h"; sourceTree = "<group>"; };
+		067D467D1D6C1D6A00EA70EB /* UIViewController+ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImagePicker.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		0668FA641C9AA79400FA144F = {
 			isa = PBXGroup;
 			children = (
-				0668FA921C9AAB0700FA144F /* CHImagePicker */,
+				067D46721D6C1D6A00EA70EB /* CHImagePicker */,
 				0668FA6F1C9AA79500FA144F /* CHPickImageDemo */,
 				0668FA6E1C9AA79400FA144F /* Products */,
 			);
@@ -95,32 +95,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0668FA921C9AAB0700FA144F /* CHImagePicker */ = {
+		067D46721D6C1D6A00EA70EB /* CHImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				06AF710E1D6450FD00091BC1 /* UIViewController+ImagePicker.h */,
-				06AF710F1D6450FD00091BC1 /* UIViewController+ImagePicker.m */,
-				061BFA651C9AD698009F9FDE /* CHImagePicker.h */,
-				061BFA661C9AD698009F9FDE /* CHImagePicker.m */,
-				0668FAA11C9AACE500FA144F /* ChaussonSheet */,
+				067D46731D6C1D6A00EA70EB /* ChaussonSheet */,
+				067D467A1D6C1D6A00EA70EB /* CHImagePicker.h */,
+				067D467B1D6C1D6A00EA70EB /* CHImagePicker.m */,
+				067D467C1D6C1D6A00EA70EB /* UIViewController+ImagePicker.h */,
+				067D467D1D6C1D6A00EA70EB /* UIViewController+ImagePicker.m */,
 			);
-			name = CHImagePicker;
-			path = CHImagePickerController;
+			path = CHImagePicker;
 			sourceTree = "<group>";
 		};
-		0668FAA11C9AACE500FA144F /* ChaussonSheet */ = {
+		067D46731D6C1D6A00EA70EB /* ChaussonSheet */ = {
 			isa = PBXGroup;
 			children = (
-				0668FAA21C9AACE500FA144F /* CHDownSheet.h */,
-				0668FAA31C9AACE500FA144F /* CHDownSheet.m */,
-				0668FAA41C9AACE500FA144F /* CHDownSheetCell.h */,
-				0668FAA51C9AACE500FA144F /* CHDownSheetCell.m */,
-				0668FAA61C9AACE500FA144F /* CHDownSheetModel.h */,
-				0668FAA71C9AACE500FA144F /* CHDownSheetModel.m */,
+				067D46741D6C1D6A00EA70EB /* CHDownSheet.h */,
+				067D46751D6C1D6A00EA70EB /* CHDownSheet.m */,
+				067D46761D6C1D6A00EA70EB /* CHDownSheetCell.h */,
+				067D46771D6C1D6A00EA70EB /* CHDownSheetCell.m */,
+				067D46781D6C1D6A00EA70EB /* CHDownSheetModel.h */,
+				067D46791D6C1D6A00EA70EB /* CHDownSheetModel.m */,
 			);
-			name = ChaussonSheet;
-			path = CHImagePicker/ChaussonSheet;
-			sourceTree = SOURCE_ROOT;
+			path = ChaussonSheet;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -192,11 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0668FAA81C9AACE500FA144F /* CHDownSheet.m in Sources */,
-				0668FAA91C9AACE500FA144F /* CHDownSheetCell.m in Sources */,
-				06AF71101D6450FD00091BC1 /* UIViewController+ImagePicker.m in Sources */,
-				061BFA671C9AD698009F9FDE /* CHImagePicker.m in Sources */,
-				0668FAAA1C9AACE500FA144F /* CHDownSheetModel.m in Sources */,
+				067D467E1D6C1D6A00EA70EB /* CHDownSheet.m in Sources */,
+				067D467F1D6C1D6A00EA70EB /* CHDownSheetCell.m in Sources */,
+				067D46821D6C1D6A00EA70EB /* UIViewController+ImagePicker.m in Sources */,
+				067D46811D6C1D6A00EA70EB /* CHImagePicker.m in Sources */,
+				067D46801D6C1D6A00EA70EB /* CHDownSheetModel.m in Sources */,
 				0668FA781C9AA79500FA144F /* ViewController.m in Sources */,
 				0668FA751C9AA79500FA144F /* AppDelegate.m in Sources */,
 				0668FA721C9AA79500FA144F /* main.m in Sources */,

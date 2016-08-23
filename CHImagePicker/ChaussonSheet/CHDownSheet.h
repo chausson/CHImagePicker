@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "CHDownSheetCell.h"
+@class CHDownSheet;
 @protocol CHDownSheetDelegate <NSObject>
 @optional
--(void)didSelectIndex:(NSInteger)index;
+-(void)ch_sheetDidSelectIndex:(NSInteger)index;
 @end
 
 @interface CHDownSheet : UIView<UITableViewDataSource,UITableViewDelegate,UIGestureRecognizerDelegate>{

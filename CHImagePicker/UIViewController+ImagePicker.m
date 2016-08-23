@@ -13,4 +13,10 @@
         completion:(void(^)(UIImage *image))callback{
     [CHImagePicker show:animated picker:self completion:callback];
 }
+- (void)showPickerList:(BOOL)animated{
+    NSAssert([self conformsToProtocol:@protocol(CHDownSheetDelegate)], @"Must ConformsToProtocol CHDownSheetDelegate");
+    [CHImagePicker show:animated picker:(UIViewController <CHDownSheetDelegate> *)self];
+
+
+}
 @end

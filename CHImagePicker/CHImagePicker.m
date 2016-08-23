@@ -8,7 +8,6 @@
 
 #import "CHImagePicker.h"
 #import "CHDownSheet.h"
-#import <objc/runtime.h>
 typedef void (^PickCallback)(UIImage* image);
 static CHImagePicker *picker = nil;
 @interface CHImagePicker()<CHDownSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
@@ -27,12 +26,19 @@ static CHImagePicker *picker = nil;
     picker = [[[self class]alloc ]init];
     picker->_callback  = callback;
     picker->_screenController = controller;
-    CHDownSheet *sheet = [[CHDownSheet alloc]initWithList:[picker avaiablePickerSheetModel] height:330];
+    CHDownSheet *sheet = [[CHDownSheet alloc]initWithList:[CHImagePicker avaiablePickerSheetModel] height:330];
     sheet.delegate = picker;
     [sheet showInView:controller];
 }
++ (void)show:(BOOL)animated
+      picker:(UIViewController <CHDownSheetDelegate>*)controller{
+    NSAssert([controller conformsToProtocol:@protocol(CHDownSheetDelegate)], @"controller Must ConformsToProtocol CHDownSheetDelegate");
+    CHDownSheet *sheet = [[CHDownSheet alloc]initWithList:[CHImagePicker avaiablePickerSheetModel] height:330];
+    sheet.delegate = controller;
+    [sheet showInView:controller];
 
--(NSArray *)avaiablePickerSheetModel{
+}
++ (NSArray *)avaiablePickerSheetModel{
     CHDownSheetModel *pick = [[CHDownSheetModel alloc]init];
     pick.title = @"拍照";
     CHDownSheetModel *select = [[CHDownSheetModel alloc]init];
@@ -42,7 +48,7 @@ static CHImagePicker *picker = nil;
     
     return   @[pick,select,cancel];
 }
--(void)didSelectIndex:(NSInteger)index{
+- (void)ch_sheetDidSelectIndex:(NSInteger)index{
     if (index == 0) {
         //拍照[self openCamera:self];
         [self openCamera];

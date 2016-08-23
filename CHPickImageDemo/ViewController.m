@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "CHImagePicker.h"
 #import "UIViewController+ImagePicker.h"
-@interface ViewController ()
+@interface ViewController ()<CHDownSheetDelegate>
 
 @end
 
@@ -21,19 +21,31 @@
     [self.view addSubview:self.imageView];
 }
 - (IBAction)photo:(UIButton *)sender {
-//    [[CHImagePicker shareInstance]showWithController:self finish:^(UIImage *image) {
-//        NSLog(@"image=%@",image);
-//    } animated:YES];
+
     __weak typeof(self)weakSelf = self;
-//    [CHImagePicker show:YES picker:self completion:^(UIImage *image) {
-//        weakSelf.imageView.image = image;
-//    }];
+
     [self showPicker:YES completion:^(UIImage *image) {
             weakSelf.imageView.image = image;
     }];
+    
 
 }
-
+- (IBAction)showList:(UIButton *)sender {
+      [self showPickerList:YES];
+}
+-(void)ch_sheetDidSelectIndex:(NSInteger)index{
+    switch (index) {
+        case 0:
+            NSLog(@"拍照");
+            break;
+        case 1:
+            NSLog(@"从手机选择");
+            break;
+            
+        default:
+            break;
+    }
+}
 
 - (void)dealloc{
     

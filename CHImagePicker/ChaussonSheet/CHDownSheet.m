@@ -141,8 +141,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self tappedCancel];
-    if(_delegate !=nil && [_delegate respondsToSelector:@selector(didSelectIndex:)]){
-        [_delegate didSelectIndex:indexPath.row];
+    if(_delegate  && [_delegate respondsToSelector:@selector(ch_sheetDidSelectIndex:)]){
+        [_delegate ch_sheetDidSelectIndex:indexPath.row];
         [self removeFromSuperview];
         return;
     }

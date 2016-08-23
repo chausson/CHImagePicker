@@ -11,4 +11,7 @@
 @interface UIViewController (ImagePicker)
 - (void)showPicker:(BOOL)animated
         completion:(void(^)(UIImage *image))callback;
+
+- (void)showPickerList:(BOOL)animated;
+
 @end
