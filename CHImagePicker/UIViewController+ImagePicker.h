@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CHDownSheet.h"
 
 @interface UIViewController (ImagePicker)
 - (void)showPicker:(BOOL)animated
@@ -14,4 +15,6 @@
 
 - (void)showPickerList:(BOOL)animated;
 
+- (void)show:(BOOL)animated
+     handler:(NSObject <CHDownSheetDelegate>*)handler;
 @end

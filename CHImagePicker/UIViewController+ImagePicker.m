@@ -7,7 +7,8 @@
 //
 
 #import "UIViewController+ImagePicker.h"
-#import "CHImagePicker.h"   
+#import "CHImagePicker.h"  
+
 @implementation UIViewController (ImagePicker)
 - (void)showPicker:(BOOL)animated
         completion:(void(^)(UIImage *image))callback{
@@ -17,6 +18,11 @@
     NSAssert([self conformsToProtocol:@protocol(CHDownSheetDelegate)], @"Must ConformsToProtocol CHDownSheetDelegate");
     [CHImagePicker show:animated picker:(UIViewController <CHDownSheetDelegate> *)self];
 
+}
+- (void)show:(BOOL)animated
+     handler:(NSObject <CHDownSheetDelegate>*)handler{
+    NSAssert([handler conformsToProtocol:@protocol(CHDownSheetDelegate)], @"Handler Must ConformsToProtocol CHDownSheetDelegate");
+    [CHImagePicker show:animated picker:self handler:handler];
 
 }
 @end

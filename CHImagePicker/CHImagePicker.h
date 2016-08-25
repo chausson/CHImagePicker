@@ -22,4 +22,8 @@
 
 + (void)show:(BOOL)animated
       picker:(UIViewController <CHDownSheetDelegate>*)controller;
+
++ (void)show:(BOOL)animated
+      picker:(UIViewController *)controller
+     handler:(NSObject <CHDownSheetDelegate>*)handler;
 @end

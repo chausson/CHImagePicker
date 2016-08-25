@@ -38,6 +38,14 @@ static CHImagePicker *picker = nil;
     [sheet showInView:controller];
 
 }
++ (void)show:(BOOL)animated
+      picker:(UIViewController *)controller
+     handler:(NSObject <CHDownSheetDelegate>*)handler{
+    NSAssert([handler conformsToProtocol:@protocol(CHDownSheetDelegate)], @"handler Must ConformsToProtocol CHDownSheetDelegate");
+    CHDownSheet *sheet = [[CHDownSheet alloc]initWithList:[CHImagePicker avaiablePickerSheetModel] height:330];
+    sheet.delegate = handler;
+    [sheet showInView:controller];
+}
 + (NSArray *)avaiablePickerSheetModel{
     CHDownSheetModel *pick = [[CHDownSheetModel alloc]init];
     pick.title = @"拍照";
