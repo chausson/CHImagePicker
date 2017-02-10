@@ -13,14 +13,14 @@
 		0668FA7B1C9AA79500FA144F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0668FA791C9AA79500FA144F /* Main.storyboard */; };
 		0668FA7D1C9AA79500FA144F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0668FA7C1C9AA79500FA144F /* Assets.xcassets */; };
 		0668FA801C9AA79500FA144F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0668FA7E1C9AA79500FA144F /* LaunchScreen.storyboard */; };
+		067DEE3E1E4DB06000B87490 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 067DEE381E4DB06000B87490 /* UIImage+fixOrientation.m */; };
+		067DEE3F1E4DB06000B87490 /* UIView+borderLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 067DEE3A1E4DB06000B87490 /* UIView+borderLine.m */; };
+		067DEE401E4DB06000B87490 /* LMSTakePhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067DEE3C1E4DB06000B87490 /* LMSTakePhotoController.m */; };
+		067DEE411E4DB06000B87490 /* LMSTakePhotoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 067DEE3D1E4DB06000B87490 /* LMSTakePhotoController.xib */; };
 		B44E01AF1E4DA705000E4406 /* CHDownSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E019D1E4DA705000E4406 /* CHDownSheet.m */; };
 		B44E01B01E4DA705000E4406 /* CHDownSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E019F1E4DA705000E4406 /* CHDownSheetCell.m */; };
 		B44E01B11E4DA705000E4406 /* CHDownSheetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E01A11E4DA705000E4406 /* CHDownSheetModel.m */; };
 		B44E01B21E4DA705000E4406 /* CHImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E01A31E4DA705000E4406 /* CHImagePicker.m */; };
-		B44E01B31E4DA705000E4406 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E01A71E4DA705000E4406 /* UIImage+fixOrientation.m */; };
-		B44E01B41E4DA705000E4406 /* UIView+borderLine.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E01A91E4DA705000E4406 /* UIView+borderLine.m */; };
-		B44E01B51E4DA705000E4406 /* LMSTakePhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E01AB1E4DA705000E4406 /* LMSTakePhotoController.m */; };
-		B44E01B61E4DA705000E4406 /* LMSTakePhotoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B44E01AC1E4DA705000E4406 /* LMSTakePhotoController.xib */; };
 		B44E01B71E4DA705000E4406 /* UIViewController+ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E01AE1E4DA705000E4406 /* UIViewController+ImagePicker.m */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +35,13 @@
 		0668FA7C1C9AA79500FA144F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0668FA7F1C9AA79500FA144F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0668FA811C9AA79500FA144F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		067DEE371E4DB06000B87490 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		067DEE381E4DB06000B87490 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		067DEE391E4DB06000B87490 /* UIView+borderLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+borderLine.h"; sourceTree = "<group>"; };
+		067DEE3A1E4DB06000B87490 /* UIView+borderLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+borderLine.m"; sourceTree = "<group>"; };
+		067DEE3B1E4DB06000B87490 /* LMSTakePhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSTakePhotoController.h; sourceTree = "<group>"; };
+		067DEE3C1E4DB06000B87490 /* LMSTakePhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSTakePhotoController.m; sourceTree = "<group>"; };
+		067DEE3D1E4DB06000B87490 /* LMSTakePhotoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMSTakePhotoController.xib; sourceTree = "<group>"; };
 		B44E019C1E4DA705000E4406 /* CHDownSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheet.h; sourceTree = "<group>"; };
 		B44E019D1E4DA705000E4406 /* CHDownSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheet.m; sourceTree = "<group>"; };
 		B44E019E1E4DA705000E4406 /* CHDownSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheetCell.h; sourceTree = "<group>"; };
@@ -43,13 +50,6 @@
 		B44E01A11E4DA705000E4406 /* CHDownSheetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheetModel.m; sourceTree = "<group>"; };
 		B44E01A21E4DA705000E4406 /* CHImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHImagePicker.h; sourceTree = "<group>"; };
 		B44E01A31E4DA705000E4406 /* CHImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHImagePicker.m; sourceTree = "<group>"; };
-		B44E01A61E4DA705000E4406 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
-		B44E01A71E4DA705000E4406 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
-		B44E01A81E4DA705000E4406 /* UIView+borderLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+borderLine.h"; sourceTree = "<group>"; };
-		B44E01A91E4DA705000E4406 /* UIView+borderLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+borderLine.m"; sourceTree = "<group>"; };
-		B44E01AA1E4DA705000E4406 /* LMSTakePhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSTakePhotoController.h; sourceTree = "<group>"; };
-		B44E01AB1E4DA705000E4406 /* LMSTakePhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSTakePhotoController.m; sourceTree = "<group>"; };
-		B44E01AC1E4DA705000E4406 /* LMSTakePhotoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMSTakePhotoController.xib; sourceTree = "<group>"; };
 		B44E01AD1E4DA705000E4406 /* UIViewController+ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ImagePicker.h"; sourceTree = "<group>"; };
 		B44E01AE1E4DA705000E4406 /* UIViewController+ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImagePicker.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,13 +106,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		067DEE351E4DB06000B87490 /* CustomCamera */ = {
+			isa = PBXGroup;
+			children = (
+				067DEE361E4DB06000B87490 /* Category */,
+				067DEE3B1E4DB06000B87490 /* LMSTakePhotoController.h */,
+				067DEE3C1E4DB06000B87490 /* LMSTakePhotoController.m */,
+				067DEE3D1E4DB06000B87490 /* LMSTakePhotoController.xib */,
+			);
+			path = CustomCamera;
+			sourceTree = "<group>";
+		};
+		067DEE361E4DB06000B87490 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				067DEE371E4DB06000B87490 /* UIImage+fixOrientation.h */,
+				067DEE381E4DB06000B87490 /* UIImage+fixOrientation.m */,
+				067DEE391E4DB06000B87490 /* UIView+borderLine.h */,
+				067DEE3A1E4DB06000B87490 /* UIView+borderLine.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		B44E019A1E4DA705000E4406 /* CHImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				067DEE351E4DB06000B87490 /* CustomCamera */,
 				B44E019B1E4DA705000E4406 /* ChaussonSheet */,
 				B44E01A21E4DA705000E4406 /* CHImagePicker.h */,
 				B44E01A31E4DA705000E4406 /* CHImagePicker.m */,
-				B44E01A41E4DA705000E4406 /* customPhoto */,
 				B44E01AD1E4DA705000E4406 /* UIViewController+ImagePicker.h */,
 				B44E01AE1E4DA705000E4406 /* UIViewController+ImagePicker.m */,
 			);
@@ -130,28 +152,6 @@
 				B44E01A11E4DA705000E4406 /* CHDownSheetModel.m */,
 			);
 			path = ChaussonSheet;
-			sourceTree = "<group>";
-		};
-		B44E01A41E4DA705000E4406 /* customPhoto */ = {
-			isa = PBXGroup;
-			children = (
-				B44E01A51E4DA705000E4406 /* category */,
-				B44E01AA1E4DA705000E4406 /* LMSTakePhotoController.h */,
-				B44E01AB1E4DA705000E4406 /* LMSTakePhotoController.m */,
-				B44E01AC1E4DA705000E4406 /* LMSTakePhotoController.xib */,
-			);
-			path = customPhoto;
-			sourceTree = "<group>";
-		};
-		B44E01A51E4DA705000E4406 /* category */ = {
-			isa = PBXGroup;
-			children = (
-				B44E01A61E4DA705000E4406 /* UIImage+fixOrientation.h */,
-				B44E01A71E4DA705000E4406 /* UIImage+fixOrientation.m */,
-				B44E01A81E4DA705000E4406 /* UIView+borderLine.h */,
-				B44E01A91E4DA705000E4406 /* UIView+borderLine.m */,
-			);
-			path = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +213,7 @@
 			files = (
 				0668FA801C9AA79500FA144F /* LaunchScreen.storyboard in Resources */,
 				0668FA7D1C9AA79500FA144F /* Assets.xcassets in Resources */,
-				B44E01B61E4DA705000E4406 /* LMSTakePhotoController.xib in Resources */,
+				067DEE411E4DB06000B87490 /* LMSTakePhotoController.xib in Resources */,
 				0668FA7B1C9AA79500FA144F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,13 +227,13 @@
 			files = (
 				B44E01AF1E4DA705000E4406 /* CHDownSheet.m in Sources */,
 				B44E01B01E4DA705000E4406 /* CHDownSheetCell.m in Sources */,
-				B44E01B51E4DA705000E4406 /* LMSTakePhotoController.m in Sources */,
-				B44E01B31E4DA705000E4406 /* UIImage+fixOrientation.m in Sources */,
-				B44E01B41E4DA705000E4406 /* UIView+borderLine.m in Sources */,
 				B44E01B21E4DA705000E4406 /* CHImagePicker.m in Sources */,
 				B44E01B11E4DA705000E4406 /* CHDownSheetModel.m in Sources */,
 				0668FA781C9AA79500FA144F /* ViewController.m in Sources */,
 				B44E01B71E4DA705000E4406 /* UIViewController+ImagePicker.m in Sources */,
+				067DEE3F1E4DB06000B87490 /* UIView+borderLine.m in Sources */,
+				067DEE3E1E4DB06000B87490 /* UIImage+fixOrientation.m in Sources */,
+				067DEE401E4DB06000B87490 /* LMSTakePhotoController.m in Sources */,
 				0668FA751C9AA79500FA144F /* AppDelegate.m in Sources */,
 				0668FA721C9AA79500FA144F /* main.m in Sources */,
 			);
