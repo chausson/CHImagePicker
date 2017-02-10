@@ -8,9 +8,10 @@
 
 #import "CHImagePicker.h"
 #import "CHDownSheet.h"
+#import "LMSTakePhotoController.h"
 typedef void (^PickCallback)(UIImage* image);
 static CHImagePicker *picker = nil;
-@interface CHImagePicker()<CHDownSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface CHImagePicker()<CHDownSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,LMSTakePhotoControllerDelegate>
 @end
 @implementation CHImagePicker{
     __weak UIViewController *_screenController;
@@ -69,29 +70,38 @@ static CHImagePicker *picker = nil;
 }
 #pragma mark 打开照相机
 - (void)openCamera{
-    NSUInteger sourceType = 0;
-    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        
-        sourceType =  UIImagePickerControllerSourceTypeCamera;
-        
+//    NSUInteger sourceType = 0;
+//    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+//        
+//        sourceType =  UIImagePickerControllerSourceTypeCamera;
+//        
+//    }
+//    //    if (![UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera]) {
+//    //        sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+//    //    }
+//    sourceType = UIImagePickerControllerSourceTypeCamera; //照相机
+//    //sourceType = UIImagePickerControllerSourceTypePhotoLibrary; //图片库
+//    //sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum; //保存的相片
+//    UIImagePickerController *pickerImage = [[UIImagePickerController alloc] init];
+//    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+//        pickerImage.sourceType = UIImagePickerControllerSourceTypeCamera;
+//        //pickerImage.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+//        pickerImage.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:pickerImage.sourceType];
+//        
+//    }
+//    pickerImage.sourceType = sourceType;
+//    pickerImage.delegate = self;
+//    pickerImage.allowsEditing = YES;
+//    [_screenController presentViewController:pickerImage animated:_animated completion:^{}];
+    LMSTakePhotoController *p = [[LMSTakePhotoController alloc] init];
+    if (!p.isAuthorizedCamera || !p.isCameraAvailable) {
+        NSLog(@"设备不支持拍照");
+        return;
     }
-    //    if (![UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera]) {
-    //        sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    //    }
-    sourceType = UIImagePickerControllerSourceTypeCamera; //照相机
-    //sourceType = UIImagePickerControllerSourceTypePhotoLibrary; //图片库
-    //sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum; //保存的相片
-    UIImagePickerController *pickerImage = [[UIImagePickerController alloc] init];
-    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        pickerImage.sourceType = UIImagePickerControllerSourceTypeCamera;
-        //pickerImage.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-        pickerImage.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:pickerImage.sourceType];
-        
-    }
-    pickerImage.sourceType = sourceType;
-    pickerImage.delegate = self;
-    pickerImage.allowsEditing = YES;
-    [_screenController presentViewController:pickerImage animated:_animated completion:^{}];
+    p.position = TakePhotoPositionBack;
+    p.delegate = self;
+    [_screenController presentViewController:p animated:YES completion:NULL];
+    
 }
 #pragma mark 打开相册
 - (void)openPhotoLibrary{
@@ -103,12 +113,12 @@ static CHImagePicker *picker = nil;
     }
     
     UIImagePickerController *pickerImage = [[UIImagePickerController alloc] init];
-    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
-        //pickerImage.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-        pickerImage.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-        pickerImage.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:pickerImage.sourceType];
-        
-    }
+//    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+//        //pickerImage.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+//        pickerImage.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+//        pickerImage.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:pickerImage.sourceType];
+//        
+//    }
     pickerImage.sourceType = sourceType;
     pickerImage.delegate = self;
     pickerImage.allowsEditing = YES;
@@ -126,4 +136,18 @@ static CHImagePicker *picker = nil;
     }];
     
 }
+
+#pragma LMSTakePhotoControllerDelegate
+-(void)didFinishPickingImage:(UIImage *)image{
+    if (image) {
+        if (_callback) {
+            _callback(image);
+        }
+    }
+
+}
+
+
+
+
 @end

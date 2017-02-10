@@ -13,11 +13,15 @@
 		0668FA7B1C9AA79500FA144F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0668FA791C9AA79500FA144F /* Main.storyboard */; };
 		0668FA7D1C9AA79500FA144F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0668FA7C1C9AA79500FA144F /* Assets.xcassets */; };
 		0668FA801C9AA79500FA144F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0668FA7E1C9AA79500FA144F /* LaunchScreen.storyboard */; };
-		067D467E1D6C1D6A00EA70EB /* CHDownSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 067D46751D6C1D6A00EA70EB /* CHDownSheet.m */; };
-		067D467F1D6C1D6A00EA70EB /* CHDownSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 067D46771D6C1D6A00EA70EB /* CHDownSheetCell.m */; };
-		067D46801D6C1D6A00EA70EB /* CHDownSheetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 067D46791D6C1D6A00EA70EB /* CHDownSheetModel.m */; };
-		067D46811D6C1D6A00EA70EB /* CHImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 067D467B1D6C1D6A00EA70EB /* CHImagePicker.m */; };
-		067D46821D6C1D6A00EA70EB /* UIViewController+ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 067D467D1D6C1D6A00EA70EB /* UIViewController+ImagePicker.m */; };
+		B44E01AF1E4DA705000E4406 /* CHDownSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E019D1E4DA705000E4406 /* CHDownSheet.m */; };
+		B44E01B01E4DA705000E4406 /* CHDownSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E019F1E4DA705000E4406 /* CHDownSheetCell.m */; };
+		B44E01B11E4DA705000E4406 /* CHDownSheetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E01A11E4DA705000E4406 /* CHDownSheetModel.m */; };
+		B44E01B21E4DA705000E4406 /* CHImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E01A31E4DA705000E4406 /* CHImagePicker.m */; };
+		B44E01B31E4DA705000E4406 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E01A71E4DA705000E4406 /* UIImage+fixOrientation.m */; };
+		B44E01B41E4DA705000E4406 /* UIView+borderLine.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E01A91E4DA705000E4406 /* UIView+borderLine.m */; };
+		B44E01B51E4DA705000E4406 /* LMSTakePhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E01AB1E4DA705000E4406 /* LMSTakePhotoController.m */; };
+		B44E01B61E4DA705000E4406 /* LMSTakePhotoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B44E01AC1E4DA705000E4406 /* LMSTakePhotoController.xib */; };
+		B44E01B71E4DA705000E4406 /* UIViewController+ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E01AE1E4DA705000E4406 /* UIViewController+ImagePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,16 +35,23 @@
 		0668FA7C1C9AA79500FA144F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0668FA7F1C9AA79500FA144F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0668FA811C9AA79500FA144F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		067D46741D6C1D6A00EA70EB /* CHDownSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheet.h; sourceTree = "<group>"; };
-		067D46751D6C1D6A00EA70EB /* CHDownSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheet.m; sourceTree = "<group>"; };
-		067D46761D6C1D6A00EA70EB /* CHDownSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheetCell.h; sourceTree = "<group>"; };
-		067D46771D6C1D6A00EA70EB /* CHDownSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheetCell.m; sourceTree = "<group>"; };
-		067D46781D6C1D6A00EA70EB /* CHDownSheetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheetModel.h; sourceTree = "<group>"; };
-		067D46791D6C1D6A00EA70EB /* CHDownSheetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheetModel.m; sourceTree = "<group>"; };
-		067D467A1D6C1D6A00EA70EB /* CHImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHImagePicker.h; sourceTree = "<group>"; };
-		067D467B1D6C1D6A00EA70EB /* CHImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHImagePicker.m; sourceTree = "<group>"; };
-		067D467C1D6C1D6A00EA70EB /* UIViewController+ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ImagePicker.h"; sourceTree = "<group>"; };
-		067D467D1D6C1D6A00EA70EB /* UIViewController+ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImagePicker.m"; sourceTree = "<group>"; };
+		B44E019C1E4DA705000E4406 /* CHDownSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheet.h; sourceTree = "<group>"; };
+		B44E019D1E4DA705000E4406 /* CHDownSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheet.m; sourceTree = "<group>"; };
+		B44E019E1E4DA705000E4406 /* CHDownSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheetCell.h; sourceTree = "<group>"; };
+		B44E019F1E4DA705000E4406 /* CHDownSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheetCell.m; sourceTree = "<group>"; };
+		B44E01A01E4DA705000E4406 /* CHDownSheetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheetModel.h; sourceTree = "<group>"; };
+		B44E01A11E4DA705000E4406 /* CHDownSheetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheetModel.m; sourceTree = "<group>"; };
+		B44E01A21E4DA705000E4406 /* CHImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHImagePicker.h; sourceTree = "<group>"; };
+		B44E01A31E4DA705000E4406 /* CHImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHImagePicker.m; sourceTree = "<group>"; };
+		B44E01A61E4DA705000E4406 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		B44E01A71E4DA705000E4406 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		B44E01A81E4DA705000E4406 /* UIView+borderLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+borderLine.h"; sourceTree = "<group>"; };
+		B44E01A91E4DA705000E4406 /* UIView+borderLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+borderLine.m"; sourceTree = "<group>"; };
+		B44E01AA1E4DA705000E4406 /* LMSTakePhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSTakePhotoController.h; sourceTree = "<group>"; };
+		B44E01AB1E4DA705000E4406 /* LMSTakePhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSTakePhotoController.m; sourceTree = "<group>"; };
+		B44E01AC1E4DA705000E4406 /* LMSTakePhotoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMSTakePhotoController.xib; sourceTree = "<group>"; };
+		B44E01AD1E4DA705000E4406 /* UIViewController+ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ImagePicker.h"; sourceTree = "<group>"; };
+		B44E01AE1E4DA705000E4406 /* UIViewController+ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImagePicker.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +68,7 @@
 		0668FA641C9AA79400FA144F = {
 			isa = PBXGroup;
 			children = (
-				067D46721D6C1D6A00EA70EB /* CHImagePicker */,
+				B44E019A1E4DA705000E4406 /* CHImagePicker */,
 				0668FA6F1C9AA79500FA144F /* CHPickImageDemo */,
 				0668FA6E1C9AA79400FA144F /* Products */,
 			);
@@ -95,29 +106,52 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		067D46721D6C1D6A00EA70EB /* CHImagePicker */ = {
+		B44E019A1E4DA705000E4406 /* CHImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				067D46731D6C1D6A00EA70EB /* ChaussonSheet */,
-				067D467A1D6C1D6A00EA70EB /* CHImagePicker.h */,
-				067D467B1D6C1D6A00EA70EB /* CHImagePicker.m */,
-				067D467C1D6C1D6A00EA70EB /* UIViewController+ImagePicker.h */,
-				067D467D1D6C1D6A00EA70EB /* UIViewController+ImagePicker.m */,
+				B44E019B1E4DA705000E4406 /* ChaussonSheet */,
+				B44E01A21E4DA705000E4406 /* CHImagePicker.h */,
+				B44E01A31E4DA705000E4406 /* CHImagePicker.m */,
+				B44E01A41E4DA705000E4406 /* customPhoto */,
+				B44E01AD1E4DA705000E4406 /* UIViewController+ImagePicker.h */,
+				B44E01AE1E4DA705000E4406 /* UIViewController+ImagePicker.m */,
 			);
 			path = CHImagePicker;
 			sourceTree = "<group>";
 		};
-		067D46731D6C1D6A00EA70EB /* ChaussonSheet */ = {
+		B44E019B1E4DA705000E4406 /* ChaussonSheet */ = {
 			isa = PBXGroup;
 			children = (
-				067D46741D6C1D6A00EA70EB /* CHDownSheet.h */,
-				067D46751D6C1D6A00EA70EB /* CHDownSheet.m */,
-				067D46761D6C1D6A00EA70EB /* CHDownSheetCell.h */,
-				067D46771D6C1D6A00EA70EB /* CHDownSheetCell.m */,
-				067D46781D6C1D6A00EA70EB /* CHDownSheetModel.h */,
-				067D46791D6C1D6A00EA70EB /* CHDownSheetModel.m */,
+				B44E019C1E4DA705000E4406 /* CHDownSheet.h */,
+				B44E019D1E4DA705000E4406 /* CHDownSheet.m */,
+				B44E019E1E4DA705000E4406 /* CHDownSheetCell.h */,
+				B44E019F1E4DA705000E4406 /* CHDownSheetCell.m */,
+				B44E01A01E4DA705000E4406 /* CHDownSheetModel.h */,
+				B44E01A11E4DA705000E4406 /* CHDownSheetModel.m */,
 			);
 			path = ChaussonSheet;
+			sourceTree = "<group>";
+		};
+		B44E01A41E4DA705000E4406 /* customPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				B44E01A51E4DA705000E4406 /* category */,
+				B44E01AA1E4DA705000E4406 /* LMSTakePhotoController.h */,
+				B44E01AB1E4DA705000E4406 /* LMSTakePhotoController.m */,
+				B44E01AC1E4DA705000E4406 /* LMSTakePhotoController.xib */,
+			);
+			path = customPhoto;
+			sourceTree = "<group>";
+		};
+		B44E01A51E4DA705000E4406 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				B44E01A61E4DA705000E4406 /* UIImage+fixOrientation.h */,
+				B44E01A71E4DA705000E4406 /* UIImage+fixOrientation.m */,
+				B44E01A81E4DA705000E4406 /* UIView+borderLine.h */,
+				B44E01A91E4DA705000E4406 /* UIView+borderLine.m */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +213,7 @@
 			files = (
 				0668FA801C9AA79500FA144F /* LaunchScreen.storyboard in Resources */,
 				0668FA7D1C9AA79500FA144F /* Assets.xcassets in Resources */,
+				B44E01B61E4DA705000E4406 /* LMSTakePhotoController.xib in Resources */,
 				0668FA7B1C9AA79500FA144F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,12 +225,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				067D467E1D6C1D6A00EA70EB /* CHDownSheet.m in Sources */,
-				067D467F1D6C1D6A00EA70EB /* CHDownSheetCell.m in Sources */,
-				067D46821D6C1D6A00EA70EB /* UIViewController+ImagePicker.m in Sources */,
-				067D46811D6C1D6A00EA70EB /* CHImagePicker.m in Sources */,
-				067D46801D6C1D6A00EA70EB /* CHDownSheetModel.m in Sources */,
+				B44E01AF1E4DA705000E4406 /* CHDownSheet.m in Sources */,
+				B44E01B01E4DA705000E4406 /* CHDownSheetCell.m in Sources */,
+				B44E01B51E4DA705000E4406 /* LMSTakePhotoController.m in Sources */,
+				B44E01B31E4DA705000E4406 /* UIImage+fixOrientation.m in Sources */,
+				B44E01B41E4DA705000E4406 /* UIView+borderLine.m in Sources */,
+				B44E01B21E4DA705000E4406 /* CHImagePicker.m in Sources */,
+				B44E01B11E4DA705000E4406 /* CHDownSheetModel.m in Sources */,
 				0668FA781C9AA79500FA144F /* ViewController.m in Sources */,
+				B44E01B71E4DA705000E4406 /* UIViewController+ImagePicker.m in Sources */,
 				0668FA751C9AA79500FA144F /* AppDelegate.m in Sources */,
 				0668FA721C9AA79500FA144F /* main.m in Sources */,
 			);
