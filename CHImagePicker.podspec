@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/chausson/CHImagePicker.git", :tag => s.version}
   s.source_files  = "CHImagePicker/*.{h,m}","CHImagePicker/ChaussonSheet/*.{h,m}","CHImagePicker/CustomCamera/*.{h,m}"
-  s.resource = "CHImagePicke/CustomCamer/LMSTakePhotoController.xib"
+  s.resource = "CHImagePicker/CustomCamera/LMSTakePhotoController.xib"
 end	
 
