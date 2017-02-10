@@ -13,10 +13,10 @@
 		0668FA7B1C9AA79500FA144F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0668FA791C9AA79500FA144F /* Main.storyboard */; };
 		0668FA7D1C9AA79500FA144F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0668FA7C1C9AA79500FA144F /* Assets.xcassets */; };
 		0668FA801C9AA79500FA144F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0668FA7E1C9AA79500FA144F /* LaunchScreen.storyboard */; };
-		067DEE3E1E4DB06000B87490 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 067DEE381E4DB06000B87490 /* UIImage+fixOrientation.m */; };
-		067DEE3F1E4DB06000B87490 /* UIView+borderLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 067DEE3A1E4DB06000B87490 /* UIView+borderLine.m */; };
 		067DEE401E4DB06000B87490 /* LMSTakePhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067DEE3C1E4DB06000B87490 /* LMSTakePhotoController.m */; };
 		067DEE411E4DB06000B87490 /* LMSTakePhotoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 067DEE3D1E4DB06000B87490 /* LMSTakePhotoController.xib */; };
+		067DEE461E4DB61000B87490 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 067DEE431E4DB61000B87490 /* UIImage+fixOrientation.m */; };
+		067DEE471E4DB61000B87490 /* UIView+borderLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 067DEE451E4DB61000B87490 /* UIView+borderLine.m */; };
 		B44E01AF1E4DA705000E4406 /* CHDownSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E019D1E4DA705000E4406 /* CHDownSheet.m */; };
 		B44E01B01E4DA705000E4406 /* CHDownSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E019F1E4DA705000E4406 /* CHDownSheetCell.m */; };
 		B44E01B11E4DA705000E4406 /* CHDownSheetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E01A11E4DA705000E4406 /* CHDownSheetModel.m */; };
@@ -35,13 +35,13 @@
 		0668FA7C1C9AA79500FA144F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0668FA7F1C9AA79500FA144F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0668FA811C9AA79500FA144F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		067DEE371E4DB06000B87490 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
-		067DEE381E4DB06000B87490 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
-		067DEE391E4DB06000B87490 /* UIView+borderLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+borderLine.h"; sourceTree = "<group>"; };
-		067DEE3A1E4DB06000B87490 /* UIView+borderLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+borderLine.m"; sourceTree = "<group>"; };
 		067DEE3B1E4DB06000B87490 /* LMSTakePhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSTakePhotoController.h; sourceTree = "<group>"; };
 		067DEE3C1E4DB06000B87490 /* LMSTakePhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSTakePhotoController.m; sourceTree = "<group>"; };
 		067DEE3D1E4DB06000B87490 /* LMSTakePhotoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMSTakePhotoController.xib; sourceTree = "<group>"; };
+		067DEE421E4DB61000B87490 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		067DEE431E4DB61000B87490 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		067DEE441E4DB61000B87490 /* UIView+borderLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+borderLine.h"; sourceTree = "<group>"; };
+		067DEE451E4DB61000B87490 /* UIView+borderLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+borderLine.m"; sourceTree = "<group>"; };
 		B44E019C1E4DA705000E4406 /* CHDownSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheet.h; sourceTree = "<group>"; };
 		B44E019D1E4DA705000E4406 /* CHDownSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDownSheet.m; sourceTree = "<group>"; };
 		B44E019E1E4DA705000E4406 /* CHDownSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDownSheetCell.h; sourceTree = "<group>"; };
@@ -109,23 +109,15 @@
 		067DEE351E4DB06000B87490 /* CustomCamera */ = {
 			isa = PBXGroup;
 			children = (
-				067DEE361E4DB06000B87490 /* Category */,
+				067DEE421E4DB61000B87490 /* UIImage+fixOrientation.h */,
+				067DEE431E4DB61000B87490 /* UIImage+fixOrientation.m */,
+				067DEE441E4DB61000B87490 /* UIView+borderLine.h */,
+				067DEE451E4DB61000B87490 /* UIView+borderLine.m */,
 				067DEE3B1E4DB06000B87490 /* LMSTakePhotoController.h */,
 				067DEE3C1E4DB06000B87490 /* LMSTakePhotoController.m */,
 				067DEE3D1E4DB06000B87490 /* LMSTakePhotoController.xib */,
 			);
 			path = CustomCamera;
-			sourceTree = "<group>";
-		};
-		067DEE361E4DB06000B87490 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				067DEE371E4DB06000B87490 /* UIImage+fixOrientation.h */,
-				067DEE381E4DB06000B87490 /* UIImage+fixOrientation.m */,
-				067DEE391E4DB06000B87490 /* UIView+borderLine.h */,
-				067DEE3A1E4DB06000B87490 /* UIView+borderLine.m */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		B44E019A1E4DA705000E4406 /* CHImagePicker */ = {
@@ -225,14 +217,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				067DEE461E4DB61000B87490 /* UIImage+fixOrientation.m in Sources */,
 				B44E01AF1E4DA705000E4406 /* CHDownSheet.m in Sources */,
+				067DEE471E4DB61000B87490 /* UIView+borderLine.m in Sources */,
 				B44E01B01E4DA705000E4406 /* CHDownSheetCell.m in Sources */,
 				B44E01B21E4DA705000E4406 /* CHImagePicker.m in Sources */,
 				B44E01B11E4DA705000E4406 /* CHDownSheetModel.m in Sources */,
 				0668FA781C9AA79500FA144F /* ViewController.m in Sources */,
 				B44E01B71E4DA705000E4406 /* UIViewController+ImagePicker.m in Sources */,
-				067DEE3F1E4DB06000B87490 /* UIView+borderLine.m in Sources */,
-				067DEE3E1E4DB06000B87490 /* UIImage+fixOrientation.m in Sources */,
 				067DEE401E4DB06000B87490 /* LMSTakePhotoController.m in Sources */,
 				0668FA751C9AA79500FA144F /* AppDelegate.m in Sources */,
 				0668FA721C9AA79500FA144F /* main.m in Sources */,
