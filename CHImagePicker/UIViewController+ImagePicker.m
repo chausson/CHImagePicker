@@ -25,4 +25,13 @@
     [CHImagePicker show:animated picker:self handler:handler];
 
 }
+- (void)openCamera{
+   CHImagePicker *picker = [[CHImagePicker alloc]init];
+    [picker openCamera:self];
+}
+
+- (void)openPhotoLibrary{
+    CHImagePicker *picker = [[CHImagePicker alloc]init];
+    [picker openPhotoLibrary:self];
+}
 @end

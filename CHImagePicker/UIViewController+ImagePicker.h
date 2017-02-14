@@ -17,4 +17,8 @@
 
 - (void)show:(BOOL)animated
      handler:(NSObject <CHDownSheetDelegate>*)handler;
+
+- (void)openCamera;
+
+- (void)openPhotoLibrary;
 @end

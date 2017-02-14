@@ -12,9 +12,6 @@
 
 @interface CHImagePicker : NSObject
 
-+ (instancetype) new __unavailable;
-- (instancetype) init __unavailable;
-
 
 + (void)show:(BOOL)animated
       picker:(UIViewController *)controller
@@ -26,4 +23,8 @@
 + (void)show:(BOOL)animated
       picker:(UIViewController *)controller
      handler:(NSObject <CHDownSheetDelegate>*)handler;
+
+- (void)openCamera:(UIViewController *)controller;
+
+- (void)openPhotoLibrary:(UIViewController *)controller;
 @end

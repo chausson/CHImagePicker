@@ -57,54 +57,36 @@ static CHImagePicker *picker = nil;
     
     return   @[pick,select,cancel];
 }
-- (void)ch_sheetDidSelectIndex:(NSInteger)index{
+- (void)ch_SheetDidSelectIndex:(NSInteger)index{
     if (index == 0) {
         //拍照[self openCamera:self];
-        [self openCamera];
+        [self openCamera:_screenController];
     }else if (index == 1){
         //相册 [self openPhotoLibrary:self];
-        [self openPhotoLibrary];
+        [self openPhotoLibrary:_screenController];
     }else if (index == 2){
         
     }
 }
 #pragma mark 打开照相机
-- (void)openCamera{
-//    NSUInteger sourceType = 0;
-//    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-//        
-//        sourceType =  UIImagePickerControllerSourceTypeCamera;
-//        
-//    }
-//    //    if (![UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera]) {
-//    //        sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-//    //    }
-//    sourceType = UIImagePickerControllerSourceTypeCamera; //照相机
-//    //sourceType = UIImagePickerControllerSourceTypePhotoLibrary; //图片库
-//    //sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum; //保存的相片
-//    UIImagePickerController *pickerImage = [[UIImagePickerController alloc] init];
-//    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-//        pickerImage.sourceType = UIImagePickerControllerSourceTypeCamera;
-//        //pickerImage.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-//        pickerImage.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:pickerImage.sourceType];
-//        
-//    }
-//    pickerImage.sourceType = sourceType;
-//    pickerImage.delegate = self;
-//    pickerImage.allowsEditing = YES;
-//    [_screenController presentViewController:pickerImage animated:_animated completion:^{}];
+- (void)openCamera:(UIViewController *)controller{
+    NSAssert(controller != nil, @"必须设置相机打开的控制器");
+
     LMSTakePhotoController *p = [[LMSTakePhotoController alloc] init];
     if (!p.isAuthorizedCamera || !p.isCameraAvailable) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"该设备不支持拍照，请重新设置后打开。" preferredStyle:UIAlertControllerStyleAlert];
+        [_screenController presentViewController:alert animated:YES completion:NULL];
         NSLog(@"设备不支持拍照");
         return;
     }
     p.position = TakePhotoPositionBack;
     p.delegate = self;
-    [_screenController presentViewController:p animated:YES completion:NULL];
-    
+    [controller presentViewController:p animated:YES completion:NULL];
 }
 #pragma mark 打开相册
-- (void)openPhotoLibrary{
+
+- (void)openPhotoLibrary:(UIViewController *)controller{
+    NSAssert(controller != nil, @"必须设置相册打开的控制器");
     NSUInteger sourceType = 0;
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         
@@ -113,16 +95,11 @@ static CHImagePicker *picker = nil;
     }
     
     UIImagePickerController *pickerImage = [[UIImagePickerController alloc] init];
-//    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
-//        //pickerImage.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-//        pickerImage.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-//        pickerImage.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:pickerImage.sourceType];
-//        
-//    }
     pickerImage.sourceType = sourceType;
     pickerImage.delegate = self;
     pickerImage.allowsEditing = YES;
-    [_screenController presentViewController:pickerImage animated:_animated completion:^{}];
+    [controller presentViewController:pickerImage animated:_animated completion:^{}];
+    
 }
 #pragma mark - Imagepicker delegte
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info

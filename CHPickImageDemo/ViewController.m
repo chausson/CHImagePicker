@@ -30,8 +30,8 @@
     
 
 }
-- (IBAction)showList:(UIButton *)sender {
-      [self showPickerList:YES];
+- (IBAction)openLibrary:(UIButton *)sender {
+    [self openPhotoLibrary];
 }
 -(void)ch_sheetDidSelectIndex:(NSInteger)index{
     switch (index) {

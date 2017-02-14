@@ -27,7 +27,7 @@
     return self;
 }
 
--(id)initWithList:(NSArray *)list height:(CGFloat)height{
+-(CHDownSheet *)initWithList:(NSArray *)list height:(CGFloat)height{
     self = [super init];
     if(self){
         self.frame = CGRectMake(0, 0, IScreenWidth, IScreenHeight);
