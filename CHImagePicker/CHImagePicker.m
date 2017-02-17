@@ -60,10 +60,10 @@ static CHImagePicker *picker = nil;
 - (void)ch_SheetDidSelectIndex:(NSInteger)index{
     if (index == 0) {
         //拍照[self openCamera:self];
-        [self openCamera:_screenController];
+        [self openCamera:_screenController completion:nil];
     }else if (index == 1){
         //相册 [self openPhotoLibrary:self];
-        [self openPhotoLibrary:_screenController];
+        [self openPhotoLibrary:_screenController completion:nil ];
     }else if (index == 2){
         
     }

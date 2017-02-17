@@ -27,11 +27,11 @@
 }
 - (void)openCamera{
    CHImagePicker *picker = [[CHImagePicker alloc]init];
-    [picker openCamera:self];
+    [picker openCamera:self completion:nil];
 }
 
 - (void)openPhotoLibrary{
     CHImagePicker *picker = [[CHImagePicker alloc]init];
-    [picker openPhotoLibrary:self];
+    [picker openPhotoLibrary:self completion:nil];
 }
 @end
