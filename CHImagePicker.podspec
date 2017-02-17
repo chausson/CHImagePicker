@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CHImagePicker"
-  s.version      = "1.3.0"
+  s.version      = "1.4.0"
   s.summary      = "快捷选择照片的组件，自定义样式"
   s.description  = "增加新的拍照以及列表接口，并且增加列表弹出的状态"
   s.homepage     = "https://github.com/chausson/CHImagePicker.git"

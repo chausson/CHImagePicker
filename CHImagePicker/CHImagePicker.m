@@ -69,7 +69,8 @@ static CHImagePicker *picker = nil;
     }
 }
 #pragma mark 打开照相机
-- (void)openCamera:(UIViewController *)controller{
+- (void)openCamera:(UIViewController *)controller
+        completion:(void(^)(UIImage *image))callback{
     NSAssert(controller != nil, @"必须设置相机打开的控制器");
 
     LMSTakePhotoController *p = [[LMSTakePhotoController alloc] init];
@@ -79,21 +80,19 @@ static CHImagePicker *picker = nil;
         NSLog(@"设备不支持拍照");
         return;
     }
+    self->_callback = callback;
     p.position = TakePhotoPositionBack;
     p.delegate = self;
     [controller presentViewController:p animated:YES completion:NULL];
 }
 #pragma mark 打开相册
-
-- (void)openPhotoLibrary:(UIViewController *)controller{
+- (void)openPhotoLibrary:(UIViewController *)controller
+              completion:(void(^)(UIImage *image))callback{
     NSAssert(controller != nil, @"必须设置相册打开的控制器");
     NSUInteger sourceType = 0;
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        
         sourceType =  UIImagePickerControllerSourceTypePhotoLibrary;
-        
     }
-    
     UIImagePickerController *pickerImage = [[UIImagePickerController alloc] init];
     pickerImage.sourceType = sourceType;
     pickerImage.delegate = self;

@@ -24,7 +24,9 @@
       picker:(UIViewController *)controller
      handler:(NSObject <CHDownSheetDelegate>*)handler;
 
-- (void)openCamera:(UIViewController *)controller;
+- (void)openCamera:(UIViewController *)controller
+        completion:(void(^)(UIImage *image))callback;
 
-- (void)openPhotoLibrary:(UIViewController *)controller;
+- (void)openPhotoLibrary:(UIViewController *)controller
+              completion:(void(^)(UIImage *image))callback;
 @end
