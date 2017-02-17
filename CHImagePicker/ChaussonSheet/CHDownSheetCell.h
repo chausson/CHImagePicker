@@ -12,7 +12,6 @@
 
 #import "CHDownSheetModel.h"
 @interface CHDownSheetCell : UITableViewCell{
-    UIImageView *leftView;
     UILabel *InfoLabel;
     CHDownSheetModel *cellData;
     UIView *backgroundView;

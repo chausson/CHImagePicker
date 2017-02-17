@@ -57,8 +57,16 @@
     }
     [self animeData];
 }
+- (void)showOnView:(UIView *)aView
+{
+    NSAssert([aView isKindOfClass:[UIView class]], @"请传入UIView类型的对象");
+    [aView addSubview:self];
+    [self animeData];
+
+}
 -(void)animeData{
     //self.userInteractionEnabled = YES;
+    self.displaying = YES;
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tappedCancel)];
     [self addGestureRecognizer:tapGesture];
     tapGesture.delegate = self;
@@ -83,6 +91,8 @@
 }
 
 -(void)tappedCancel{
+    self.displaying = NO;
+
     [UIView animateWithDuration:.25 animations:^{
         [_view setFrame:CGRectMake(0, IScreenHeight,IScreenWidth, 0)];
         self.alpha = 0;
@@ -140,6 +150,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
     [self tappedCancel];
     if(_delegate  && [_delegate respondsToSelector:@selector(ch_sheetDidSelectIndex:)]){
         [_delegate ch_sheetDidSelectIndex:indexPath.row];

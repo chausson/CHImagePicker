@@ -20,8 +20,11 @@
 
 -(CHDownSheet *)initWithList:(NSArray *)list height:(CGFloat)height;
 - (void)showInView:(UIViewController *)Sview;
+- (void)showOnView:(UIView *)aView;
 @property (nonatomic ,weak) id <CHDownSheetDelegate> delegate;
 @property (nonatomic ,strong) UITableView *view;
+@property (nonatomic ,assign ,getter=isDisplaying) BOOL displaying;
+
 @end
 
 

@@ -17,12 +17,10 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
-        leftView = [[UIImageView alloc]init];
         line = [[UIImageView alloc]init];
         InfoLabel = [[UILabel alloc]init];
         InfoLabel.tag = 101;
         InfoLabel.backgroundColor = [UIColor clearColor];
-      //  [self.contentView addSubview:leftView];
         self.contentView.backgroundColor = RGBCOLOR(244, 244, 244);
         [self.contentView addSubview:InfoLabel];
         [self.contentView addSubview:line];
@@ -34,7 +32,6 @@
 -(void)layoutSubviews{
     [super layoutSubviews];
     line.backgroundColor = RGBCOLOR(212,212,212);
-    leftView.frame = CGRectMake(20, (self.frame.size.height-20)/2, 20, 20);
     line.frame = CGRectMake(0, self.frame.size.height-1, self.frame.size.width, 1);
     InfoLabel.frame = CGRectMake(self.frame.size.width/2-200/2, (self.frame.size.height-20)/2, 200, 20);
     InfoLabel.textAlignment = 1;
