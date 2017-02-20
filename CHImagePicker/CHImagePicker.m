@@ -60,10 +60,10 @@ static CHImagePicker *picker = nil;
 - (void)ch_SheetDidSelectIndex:(NSInteger)index{
     if (index == 0) {
         //拍照[self openCamera:self];
-        [self openCamera:_screenController completion:nil];
+        [self openCamera:_screenController completion:_callback];
     }else if (index == 1){
         //相册 [self openPhotoLibrary:self];
-        [self openPhotoLibrary:_screenController completion:nil ];
+        [self openPhotoLibrary:_screenController completion:_callback];
     }else if (index == 2){
         
     }
@@ -94,6 +94,7 @@ static CHImagePicker *picker = nil;
         sourceType =  UIImagePickerControllerSourceTypePhotoLibrary;
     }
     UIImagePickerController *pickerImage = [[UIImagePickerController alloc] init];
+    self -> _callback = callback;
     pickerImage.sourceType = sourceType;
     pickerImage.delegate = self;
     pickerImage.allowsEditing = YES;
