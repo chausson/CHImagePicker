@@ -11,7 +11,7 @@
 @class CHDownSheet;
 @protocol CHDownSheetDelegate <NSObject>
 @optional
--(void)ch_sheetDidSelectIndex:(NSInteger)index;
+- (void)ch_sheetDidSelectIndex:(NSInteger)index;
 @end
 
 @interface CHDownSheet : UIView<UITableViewDataSource,UITableViewDelegate,UIGestureRecognizerDelegate>{

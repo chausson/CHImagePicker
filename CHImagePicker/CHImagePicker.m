@@ -57,7 +57,7 @@ static CHImagePicker *picker = nil;
     
     return   @[pick,select,cancel];
 }
-- (void)ch_SheetDidSelectIndex:(NSInteger)index{
+- (void)ch_sheetDidSelectIndex:(NSInteger)index{
     if (index == 0) {
         //拍照[self openCamera:self];
         [self openCamera:_screenController completion:_callback];
