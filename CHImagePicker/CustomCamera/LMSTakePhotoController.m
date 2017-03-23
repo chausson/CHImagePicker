@@ -90,6 +90,10 @@
 
 @implementation LMSTakePhotoController
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    return [super initWithNibName:nibNameOrNil bundle:[NSBundle bundleForClass:[self class]]];
+}
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];
